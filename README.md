@@ -2,14 +2,11 @@
 
 A new Flutter project.
 
-<h2>Video</h2>
-
-
-
 ## Video
 
-<iframe width="560" height="315" src="https://drive.google.com/file/d/1UjLReZf5vgPUVhcIs2FCssvuKZ6dCbkH/preview" allowfullscreen></iframe>
 
+
+[Watch the video here](https://drive.google.com/file/d/1UjLReZf5vgPUVhcIs2FCssvuKZ6dCbkH/view?usp=drivesdk)
 
 
 ## Getting Started
