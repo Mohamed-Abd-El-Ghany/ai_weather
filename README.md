@@ -6,7 +6,10 @@ A new Flutter project.
 
 
 
-https://drive.google.com/file/d/1UjLReZf5vgPUVhcIs2FCssvuKZ6dCbkH/view?usp=drivesdk
+## Video
+
+<iframe width="560" height="315" src="https://drive.google.com/file/d/1UjLReZf5vgPUVhcIs2FCssvuKZ6dCbkH/preview" allowfullscreen></iframe>
+
 
 
 ## Getting Started
