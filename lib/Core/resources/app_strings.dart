@@ -22,5 +22,7 @@ class AppStrings {
   static String resetPassword = 'Password reset link sent! \n Check your email';
   static String ok = 'OK';
   static String hi = 'Hi';
+  static String hello = 'Hello';
   static String logout = 'Logout';
+  static String failedData = 'Failed to get weather data';
 }

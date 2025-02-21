@@ -1,9 +1,11 @@
+import 'package:injectable/injectable.dart';
 import '../../domain/repository/auth_repository.dart';
 import '../data_source/auth_firebase_service.dart';
 import '../models/forget_password_request.dart';
 import '../models/login_request.dart';
 import '../models/signup_request.dart';
 
+@Singleton(as: AuthRepository)
 class AuthRepositoryImpl implements AuthRepository {
   final AuthFirebaseService _authService;
 
