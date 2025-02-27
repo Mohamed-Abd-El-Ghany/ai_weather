@@ -1,4 +1,4 @@
-import '../../data/models/weather_response.dart';
+import '../entities/weather_entity.dart';
 import '../repository/weather_repository.dart';
 
 class GetWeatherUseCase {
@@ -6,7 +6,7 @@ class GetWeatherUseCase {
 
   GetWeatherUseCase(this._repository);
 
-  Future<WeatherResponse> execute(String cityName) async {
+  Future<WeatherEntity> execute(String cityName) async {
     return await _repository.getWeather(cityName);
   }
 }

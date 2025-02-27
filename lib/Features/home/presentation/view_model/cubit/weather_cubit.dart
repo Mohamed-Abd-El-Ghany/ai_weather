@@ -1,6 +1,6 @@
-import 'package:ai_weather/Features/home/presentation/view_model/cubit/weather_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../domain/usecases/get_weather.dart';
+import 'weather_state.dart';
 
 class WeatherCubit extends Cubit<WeatherState> {
   final GetWeatherUseCase getWeatherUseCase;
@@ -12,8 +12,8 @@ class WeatherCubit extends Cubit<WeatherState> {
     this.cityName = cityName;
     emit(WeatherLoading());
     try {
-      final weatherResponse = await getWeatherUseCase.execute(cityName);
-      emit(WeatherSuccess(weatherResponse: weatherResponse));
+      final weatherEntity = await getWeatherUseCase.execute(cityName);
+      emit(WeatherSuccess(weatherEntity: weatherEntity));
     } on Exception catch (e) {
       emit(WeatherFailure('An unexpected error occurred: ${e.toString()}'));
     }

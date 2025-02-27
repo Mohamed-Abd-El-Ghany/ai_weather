@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:date_picker_timeline/date_picker_timeline.dart';
 import '../../../../../Core/resources/color_manager.dart';
-import '../../../data/models/weather_response.dart';
+import '../../../domain/entities/weather_entity.dart';
 
 class ForecastDatePicker extends StatelessWidget {
   final double leftPadding;
   final double width;
   final double height;
   final DateTime firstForecastDate;
-  final List<ForecastDay> forecastDays;
+  final List<ForecastDayEntity> forecastDays;
   final ValueChanged<int> onDateChanged;
 
   const ForecastDatePicker({
@@ -36,17 +36,17 @@ class ForecastDatePicker extends StatelessWidget {
         height: screenHeight * 0.18,
         selectionColor: ColorManager.blue,
         selectedTextColor: ColorManager.white,
-        dayTextStyle: TextStyle(
+        dayTextStyle: const TextStyle(
           color: Colors.white,
           fontSize: 15,
           fontWeight: FontWeight.w700,
         ),
-        dateTextStyle: TextStyle(
+        dateTextStyle: const TextStyle(
           color: Colors.white,
           fontSize: 15,
           fontWeight: FontWeight.w700,
         ),
-        monthTextStyle: TextStyle(
+        monthTextStyle: const TextStyle(
           color: Colors.white,
           fontSize: 15,
           fontWeight: FontWeight.w700,
