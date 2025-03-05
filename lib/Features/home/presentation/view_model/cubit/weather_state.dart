@@ -1,4 +1,4 @@
-import '../../../data/models/weather_response.dart';
+import '../../../domain/entities/weather_entity.dart';
 
 abstract class WeatherState {}
 
@@ -7,9 +7,9 @@ class WeatherInitial extends WeatherState {}
 class WeatherLoading extends WeatherState {}
 
 class WeatherSuccess extends WeatherState {
-  WeatherResponse weatherResponse;
+  WeatherEntity weatherEntity;
 
-  WeatherSuccess({required this.weatherResponse});
+  WeatherSuccess({required this.weatherEntity});
 }
 
 class WeatherFailure extends WeatherState {

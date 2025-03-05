@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -39,7 +40,9 @@ class LocationService {
     } on TimeoutException {
       return 'Location timeout';
     } catch (e) {
-      print('Location error: $e');
+      if (kDebugMode) {
+        print('Location error: $e');
+      }
       return 'Could not get location';
     }
   }
