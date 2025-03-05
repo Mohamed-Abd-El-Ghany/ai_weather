@@ -31,7 +31,11 @@ class LocationService {
 
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body)['address'];
-        return data['city'] ?? data['town'] ?? data['village'] ?? data['state'] ?? 'Unknown';
+        return data['city'] ??
+            data['town'] ??
+            data['village'] ??
+            data['state'] ??
+            'Unknown';
       }
 
       return 'Location service error';
